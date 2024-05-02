@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BloodMatch</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>BloodMatch</h1>
+    <p>Connecting Blood, Saving Lives</p>
+  </header>
+  <main>
+    <section id="bloodType">
+      <h2>Check Blood Compatibility</h2>
+      <label for="selectBloodType">Select Your Blood Type:</label>
+      <select id="selectBloodType">
+        <option value="A+">A+</option>
+        <option value="A-">A-</option>
+        <option value="B+">B+</option>
+        <option value="B-">B-</option>
+        <option value="AB+">AB+</option>
+        <option value="AB-">AB-</option>
+        <option value="O+">O+</option>
+        <option value="O+">O+</option>
+      </select>
+      <button onclick="checkBloodCompatibility()">Check Compatibility</button>
+      <p id="compatibilityResult">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, dolores at voluptatem doloribus natus facilis id tempora quaerat hic, assumenda quidem distinctio, odit rerum. Quas inventore aliquam consequatur quam impedit?</p>
+    </section>
+    <section id="genotype">
+      <h1>Check Genotype Compatibility</h1>
+      <label for="selectGenotype">Select Your Genotype:</label>
+      <select id="selectGenotype">
+        <option value="AA">AA</option>
+        <option value="AS">AS</option>
+        <option value="SS">SS</option>
+      </select>
+      <button onclick="checkGenotypeCompatibility()">Check Compatibility</button>
+      <p id="genotypeResult">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam possimus deleniti voluptatem voluptate sapiente, a ex optio illum. Culpa, laborum. Suscipit quaerat praesentium maiores, ad ab architecto repellendus quae nam.</p>
+    </section>
+  </main>
+  <br>
+  <footer>
+    <p>&copy; 2024 BloodMatch</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header, footer {
+    background-color: #007bff;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  main {
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+
+  }
+  
+  section {
+    margin-bottom: 20px;
+    flex: 1;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  select, button {
+    margin-bottom: 10px;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  #genotypeResult{
+    border: 20px;
+    border-color: blue;
+    background-color:red;
+  }
+  #compatibilityResult{  
+         
+  }
+  footer {
+    bottom: 0;
+    width: 100%;
+      }
+      .cube-loader {
+        position: relative;
+      /* u can choose any size */
+        width: 75px;
+        height: 75px;
+        transform-style: preserve-3d;
+        transform: rotateX(-30deg);
+        animation: animate 4s linear infinite;
+      }
+      
+      @keyframes animate {
+        0% {
+          transform: rotateX(-30deg) rotateY(0);
+        }
+      
+        100% {
+          transform: rotateX(-30deg) rotateY(360deg);
+        }
+      }
+      
+      .custom-loader{
+        text-align: center;
+        display:grid;
+        place-items: center;
+        margin: auto 45%;
+      }
+      .custom-loader {
+        width: 70px;
+        height: 70px;
+        background: #007bff;
+        border-radius: 50px;
+        -webkit-mask: radial-gradient(circle 31px at 50% calc(100% + 13px),#000 95%,#0000) top 4px left 50%,
+          radial-gradient(circle 31px,#000 95%,#0000) center,
+          radial-gradient(circle 31px at 50% -13px,#000 95%,#0000) bottom 4px left 50%,
+          linear-gradient(#000 0 0);
+        -webkit-mask-composite: xor;
+        mask-composite: exclude;
+        -webkit-mask-repeat: no-repeat;
+        animation: cu10 1.5s infinite;
+      }
+      
+      @keyframes cu10 {
+        0% {
+          -webkit-mask-size: 0    18px,0    18px,0    18px,auto
+        }
+      
+        16.67% {
+          -webkit-mask-size: 100% 18px,0    18px,0    18px,auto
+        }
+      
+        33.33% {
+          -webkit-mask-size: 100% 18px,100% 18px,0    18px,auto
+        }
+      
+        50% {
+          -webkit-mask-size: 100% 18px,100% 18px,100% 18px,auto
+        }
+      
+        66.67% {
+          -webkit-mask-size: 0    18px,100% 18px,100% 18px,auto
+        }
+      
+        83.33% {
+          -webkit-mask-size: 0    18px,0    18px,100% 18px,auto
+        }
+      
+        100% {
+          -webkit-mask-size: 0    18px,0    18px,0    18px,auto
+        }
+      }
+           
+@media (min-width: 768px){
+    footer {
+        position:fixed;
+        bottom: 0;
+        }
+}
+
+@media (max-width: 767px){
+    main {
+        padding: 20px;
+        flex-direction: column;
+          }
+}
