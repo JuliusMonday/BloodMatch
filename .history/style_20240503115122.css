@@ -40,7 +40,6 @@ button {
   border: none;
   padding: 10px 20px;
   cursor: pointer;
-  height: 40px;
 }
 
 button:hover {
@@ -56,20 +55,11 @@ h1{
   color: #fcf4f0;
 }
 #selectGenotype {
-  font-size: 16px; 
-  padding: 10px 20px; 
-  width: 200px; 
-  height: 40px; 
-  box-sizing: border-box; 
-  outline-color: #0056b3;
-}
-#selectBloodType {
-  font-size: 16px; 
-  padding: 10px 20px; 
-  width: 200px; 
-  height: 40px; 
-  box-sizing: border-box; 
-  outline-color: #0056b3;
+  font-size: 16px; /* Adjust the font size as needed */
+  padding: 10px; /* Adjust padding as needed */
+  width: 200px; /* Adjust width as needed */
+  height: 40px; /* Adjust height as needed */
+  box-sizing: border-box; /* Include padding in width and height */
 }
 .notes {
   max-width: 1200px;

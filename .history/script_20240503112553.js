@@ -1,5 +1,6 @@
 const checkBloodCompatibility = () =>{
     let selectedBloodType = document.getElementById("selectBloodType").value;
+    // let compatibilityResult = document.getElementById("compatibilityResult");
     let canDonateTo = document.getElementById("donate-to-bg");
     let canReceiveFrom = document.getElementById("receive-from-bg");
     

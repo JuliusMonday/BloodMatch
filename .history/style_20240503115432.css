@@ -61,15 +61,7 @@ h1{
   width: 200px; 
   height: 40px; 
   box-sizing: border-box; 
-  outline-color: #0056b3;
-}
-#selectBloodType {
-  font-size: 16px; 
-  padding: 10px 20px; 
-  width: 200px; 
-  height: 40px; 
-  box-sizing: border-box; 
-  outline-color: #0056b3;
+  out
 }
 .notes {
   max-width: 1200px;
