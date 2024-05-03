@@ -28,22 +28,21 @@ const checkBloodCompatibility = () =>{
       case "AB+":
         canDonateTo.textContent = `You can only donate blood to: AB+ only`;
         canReceiveFrom.textContent = `You can only receive blood from: EVERYONE✨✔🙌`;s
-        diseaseProneTo.textContent = `You are prone to a non-specific disease; Maintaining a healthy lifestyle with a balanced diet, regular exercise, and adequate sleep is far more important for disease prevention.`
+        diseaseProneTo.textContent = `You are prone to non-specific; Maintaining a healthy lifestyle with a balanced diet, regular exercise, and adequate sleep is far more important for disease prevention.`
         break;
       case "AB-":
         canDonateTo.textContent = `You can only donate blood to: AB+ and AB- only`;
         canReceiveFrom.textContent = `You can only receive blood from: AB-, A-, B-, and O-`;
-        diseaseProneTo.textContent = `You are prone to a non-specific disease; Maintaining a healthy lifestyle with a balanced diet, regular exercise, and adequate sleep is far more important for disease prevention.`
+        diseaseProneTo.textContent = `You are prone to non-specific; Maintaining a healthy lifestyle with a balanced diet, regular exercise, and adequate sleep is far more important for disease prevention.`
         break;
       case "O+":
         canDonateTo.textContent = `You can only donate blood to: A+, AB+, B+, AND O+ only`;
         canReceiveFrom.textContent = `You can only receive blood from: O+, and O-`;
-        diseaseProneTo.textContent = `You are prone to Ulcers, Gastric cancer, so avoid things that can lead you to these diseases.`
+        
         break;
       case "O-":
         canDonateTo.textContent = `You can only donate blood to: EVERYONE✨✔🙌`;
         canReceiveFrom.textContent = `You can only receive blood from: Only O-`;
-        diseaseProneTo.textContent = `You are prone to Ulcers, Gastric cancer, so avoid things that can lead you to these diseases.`
         break;
     }
     

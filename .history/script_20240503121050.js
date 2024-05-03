@@ -2,48 +2,40 @@ const checkBloodCompatibility = () =>{
     let selectedBloodType = document.getElementById("selectBloodType").value;
     let canDonateTo = document.getElementById("donate-to-bg");
     let canReceiveFrom = document.getElementById("receive-from-bg");
-    let diseaseProneTo = document.getElementById("diseases")
+    let disease
      // Logic to determine compatible blood types
     switch(selectedBloodType) {
       case "A+":
         canDonateTo.textContent = `You can only donate blood to: A+ and AB+ only`;
         canReceiveFrom.textContent = `You can only receive blood from: A+, A-, O+, and O-`;
-        diseaseProneTo.textContent = `You are prone to Heart disease, Cancer; so avoid things that can lead you to these diseases.`
         break;
       case "A-":
         canDonateTo.textContent = `You can only donate blood to: A+, A-, AB+, AB- only`;
         canReceiveFrom.textContent = `You can only receive blood from: A-, and O-`;
-        diseaseProneTo.textContent = `You are prone to Heart disease, Cancer; so avoid things that can lead you to these diseases.`
         break;
       case "B+":
         canDonateTo.textContent = `You can only donate blood to: A+ and AB+ only`;
         canReceiveFrom.textContent = `You can only receive blood from: B+, and AB+`;
-        diseaseProneTo.textContent = `You are prone to Diabetes, and Heart disease; so avoid things that can lead you to these diseases.`
         break;
       case "B-":
         canDonateTo.textContent = `You can only donate blood to: AB-, AB+, B+, and B- only`;
         canReceiveFrom.textContent = `You can only receive blood from: B-, and O-`;
-        diseaseProneTo.textContent = `You are prone to Diabetes, and Heart disease; so avoid things that can lead you to these diseases.`
         break;
       case "AB+":
         canDonateTo.textContent = `You can only donate blood to: AB+ only`;
-        canReceiveFrom.textContent = `You can only receive blood from: EVERYONE✨✔🙌`;s
-        diseaseProneTo.textContent = `You are prone to a non-specific disease; Maintaining a healthy lifestyle with a balanced diet, regular exercise, and adequate sleep is far more important for disease prevention.`
+        canReceiveFrom.textContent = `You can only receive blood from: EVERYONE✨✔🙌`;
         break;
       case "AB-":
         canDonateTo.textContent = `You can only donate blood to: AB+ and AB- only`;
         canReceiveFrom.textContent = `You can only receive blood from: AB-, A-, B-, and O-`;
-        diseaseProneTo.textContent = `You are prone to a non-specific disease; Maintaining a healthy lifestyle with a balanced diet, regular exercise, and adequate sleep is far more important for disease prevention.`
         break;
       case "O+":
         canDonateTo.textContent = `You can only donate blood to: A+, AB+, B+, AND O+ only`;
         canReceiveFrom.textContent = `You can only receive blood from: O+, and O-`;
-        diseaseProneTo.textContent = `You are prone to Ulcers, Gastric cancer, so avoid things that can lead you to these diseases.`
         break;
       case "O-":
         canDonateTo.textContent = `You can only donate blood to: EVERYONE✨✔🙌`;
         canReceiveFrom.textContent = `You can only receive blood from: Only O-`;
-        diseaseProneTo.textContent = `You are prone to Ulcers, Gastric cancer, so avoid things that can lead you to these diseases.`
         break;
     }
     

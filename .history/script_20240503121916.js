@@ -43,7 +43,6 @@ const checkBloodCompatibility = () =>{
       case "O-":
         canDonateTo.textContent = `You can only donate blood to: EVERYONE✨✔🙌`;
         canReceiveFrom.textContent = `You can only receive blood from: Only O-`;
-        diseaseProneTo.textContent = `You are prone to Ulcers, Gastric cancer, so avoid things that can lead you to these diseases.`
         break;
     }
     
