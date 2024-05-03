@@ -71,7 +71,7 @@ const checkBloodCompatibility = () =>{
       case "SS x SS":
         canMarry.textContent = `Offspring Genotype Possibilities: SS (all children)`
         cannotMary.textContent = `SCD Risk in Offspring: All children will have SCD`
-        break;
+        
       case "AS x SC":
         canMarry.textContent = `Offspring Genotype Possibilities: AS (variable %), SC (variable %), SS (variable %)`
         cannotMary.textContent = `SCD Risk in Offspring: Varies depending on specific SC genotype - consult a genetic counselor`
